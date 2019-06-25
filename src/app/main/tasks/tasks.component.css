@@ -1,0 +1,163 @@
+a {
+  text-decoration: none;
+  color: #0e1a35;
+}
+.task-box {
+  background-color: #fff;
+  margin-top: 25px;
+  border: 1px solid #ddd;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  height: 110px;
+  padding: 0 30px;
+  color: #000;
+  font-weight: 500;
+  border: 1px solid #eee;
+}
+
+.task-item {
+  height: 110px;
+  padding: 15px 0 15px 0;
+  color: #000;
+  font-weight: 500;
+  border: 1px solid #eee;
+}
+
+.task-title {
+  font-size: 20px;
+  margin: 15px 0 5px 0;
+}
+.task-title:hover {
+  color:#848484;
+}
+
+.delay {
+  color: #f83c7b;
+  margin: 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.progress {
+  color: #8492af;
+  margin: 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.progress img,
+.delay img {
+  margin-right: 5px;
+}
+
+.options {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5384ff;
+  font-weight: 600;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icon span {
+  color: #fff;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.delay-icon {
+  color: #fff;
+  background-color: #f83c7b;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-icon {
+  color: #fff;
+  background-color: #5384ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+}
+
+.delay-icon span,
+.progress-icon span {
+  font-size: 24px;
+  color: #fff;
+}
+
+@media (max-width: 1280px) {
+  .task-item {
+    height: 100px;
+  }
+
+  .progress,
+  .delay {
+    font-size: 11px;
+  }
+  .task-title {
+    font-size: 14px;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #5384ff;
+    font-weight: 600;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .progress,
+  .delay {
+    font-size: 10px;
+  }
+  .task-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 920px) {
+  .progress,
+  .delay {
+    font-size: 10px;
+  }
+  .task-title {
+    font-size: 16px;
+  }
+}

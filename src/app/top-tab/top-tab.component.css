@@ -1,0 +1,273 @@
+mat-toolbar {
+  background: #fff;
+  height: 120px;
+}
+
+.arrow-left{
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #5584ff;
+  margin-right: 0;
+}
+
+.menu-open-close-button {
+  display: flex;
+  cursor: pointer;
+}
+
+.menu-open-close-button img {
+  margin-left: 15px;
+}
+
+.menu-open-close-icon {
+  cursor: pointer;
+}
+
+.menu-open-close-icon img {
+  margin: 4px;
+}
+
+.search-icon{
+  display: flex;
+  margin-left: 35px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.add-project-btn {
+  text-decoration: none;
+  padding: 7px 30px;
+  border-radius: 25px;
+  background-color: #5584ff;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 30px;
+}
+
+.add-project-btn:hover {
+  background-color: #356dff;
+  box-shadow: 0 0 5px #424242;
+}
+
+.add-plus-icon {
+  font-weight: 200;
+  color: #fff;
+}
+
+.messages{
+  display: flex;
+}
+
+.messages img{
+  margin: 0 35px 0 15px;
+}
+
+.messages img:hover{
+  box-shadow: 0 0 2px #424242;
+}
+
+.notifications {
+  display: flex;
+  position: relative;
+}
+
+.notification-item {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  top: -2px;
+  left: 12px;
+  padding: 0px 0px;
+  background-color: #5584ff;
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.top-user{
+  display: flex;
+}
+
+.top-user img {
+  margin: auto 10px auto 30px;
+  border-radius: 50%;
+}
+
+.top-user img:hover {
+  box-shadow: 0 0 5px #424242;
+}
+
+.arrow-down {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  margin-right: 25px;
+}
+
+.top-dropdown {
+  position: absolute;
+  right: 25px;
+  top: 60px;
+  width: 200px;
+  background-color: #6e96ff;
+  box-shadow: 0 0 10px #aaa;
+  display: none;
+}
+
+.top-dropdown ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-dropdown ul li {
+  padding: 10px 20px;
+}
+
+.top-dropdown ul li a {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.top-dropdown ul li a:active,
+.top-dropdown ul li a:focus,
+.top-dropdown ul li a:visited {
+  outline: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.top-dropdown ul li:hover {
+  color: #fff;
+  background-color: #5584ff;
+}
+
+.top-dropdown ul li a:hover {
+  background-color: #5584ff;
+}
+
+.open ~ .top-dropdown {
+  display: block;
+}
+
+@media (max-width: 1280px) {
+  mat-toolbar {
+    height: 85px;
+  }
+}
+
+@media (max-width: 960px) {
+
+  mat-toolbar {
+    height: 60px;
+  }
+
+  .search-icon{
+    margin-left: 15px;
+    width: 70%;
+  }
+
+  .add-project-btn {
+    padding: 0 6px;
+    font-size: 14px;
+    margin: 0 0 0 20px;
+  }
+
+  .add-plus-icon {
+    font-weight: 200;
+  }
+
+  .messages img {
+    max-width: 60%;
+    margin: 0 15px 0 15px;
+  }
+
+  .notifications {
+    position: relative;
+    max-width: 60%;
+    margin: 0 0 0 15px;
+  }
+  .notification-item {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    top: -2px;
+    left: 12px;
+    padding: 0px 0px;
+    background-color: #5584ff;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .top-user img {
+    max-width: 85%;
+    margin: 0 5px 0 15px;
+  }
+
+  .arrow-down {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  .top-dropdown {
+    position: absolute;
+    right: 25px;
+    top: 60px;
+    width: 200px;
+    background-color: #6e96ff;
+    box-shadow: 0 0 10px #aaa;
+    display: none;
+  }
+
+  .top-dropdown ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .top-dropdown ul li {
+    padding: 10px 20px;
+  }
+
+  .top-dropdown ul li a {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

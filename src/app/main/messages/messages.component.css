@@ -1,0 +1,162 @@
+a {
+  text-decoration: none;
+  color: #0e1a35;
+}
+
+.messages-box {
+  background-color: #fff;
+  margin-top: 25px;
+  border: 1px solid #ddd;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  height: 110px;
+  padding: 0 30px;
+  color: #000;
+  font-weight: 500;
+  border: 1px solid #eee;
+}
+
+.message-with-file-item {
+  height: 110px;
+  padding: 5px 0 15px 0;
+  color: #000;
+  font-weight: 500;
+  border: 1px solid #eee;
+  background-color: #f4f5f8;
+}
+.message-without-file-item {
+  height: 110px;
+  padding: 5px 0 15px 0;
+  color: #000;
+  font-weight: 500;
+  border: 1px solid #eee;
+}
+
+.user-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-img img {
+  border-radius: 50%;
+}
+
+.task-title {
+  font-size: 14px;
+}
+
+.date-ago {
+  color: #8492af !important;
+}
+
+.message {
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message-title {
+  font-size: 14px;
+  margin: 2px;
+}
+
+.message-body {
+  font-size: 14px;
+  margin: 2px;
+}
+
+.message-body:hover {
+  color: #848484;
+}
+
+.message-icons {
+  margin-top: 5px;
+}
+
+.settings-icon {
+  margin-left: 15px;
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+.unreaded-icon{
+  color: #fff;
+  background-color: #5384ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unreaded-icon span{
+  font-size: 24px;
+  color: #fff;
+}
+
+@media(max-width: 1280px) {
+  .main-title {
+    height: 100px;
+    padding: 5px 15px;
+    font-size: 16px;
+  }
+
+  .message-with-file-item {
+    height: 100px;
+    padding: 0;
+  }
+  .message-without-file-item {
+    height: 100px;
+    padding: 0;
+  }
+
+  .user-img{
+    max-width: 25%;
+  }
+
+  .user-img img {
+    width: 80%;
+    border-radius: 50%;
+  }
+
+  .messages-title {
+    font-size: 16px;
+  }
+
+  .date-ago {
+    font-size: 14px;
+  }
+
+  .message {
+    padding-right: 5px;
+    margin-left: 5px;
+  }
+
+  .message-title {
+    font-size: 14px;
+    margin: 2px;
+  }
+
+  .message-body {
+    font-size: 14px;
+    margin: 2px;
+  }
+
+  .message-icons {
+    margin-top: 5px;
+  }
+
+  .reply-icon img,
+  .settings-icon img{
+    width: 90%;
+  }
+
+}

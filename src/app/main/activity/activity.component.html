@@ -1,0 +1,31 @@
+<div class="activity-box">
+  <div class="main-title">
+    <h2>Activity</h2>
+    <span class="spacer"></span>
+    <div class="activity-icon"><span>{{progressCounter}}</span></div>
+  </div>
+  <div class="activity-list" fxLayout="column" fxLayout.md="column"
+    fxLayout.sm="column"
+    fxLayout.xs="column">
+    <div *ngFor="let activity of activities | slice:0:4;" class="activity-item">
+      <div fxFlex="20%" class="user-img">
+        <img src="../../../assets/{{activity.user.image}}">
+      </div>
+      <div fxFlex="80%" class="activity">
+        <p class="activity-title"><span class="username">
+            {{activity.user.name + ' ' + activity.user.lastName}}</span>
+          <a href="{{activity.eventUrl}}">
+            <span class="activity-event">{{' ' + activity.event + ' '}}</span>
+          </a>
+          <span class="activity-subject">{{activity.subject |
+           slice:0: 42 - (activity.user.name.length +  activity.user.lastName.length +
+           activity.event.length) }}
+            {{(activity.user.name.length +  activity.user.lastName.length +
+              activity.event.length + activity.subject.length) > 42 ? ' (...)' : ''}}
+          </span>
+        </p>
+        <p class="days"><img class="time-icon" src="../../../assets/time-gray.png"> <span class="date-ago">{{activity.time |
+              dateAgo}}</span></p>
+      </div>
+    </div>
+  </div>

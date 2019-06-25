@@ -1,0 +1,23 @@
+<mat-toolbar>
+    <div class="arrow-left"></div>
+  <div class="menu-open-close-button">
+<!-- <img src="../../assets/tre.png" alt="menu-open-close-icon" class="menu-open-close-icon"
+      (click)="drawer.toggle()"><span></span> -->
+
+    <img src="../../assets/menu-burger.png" alt="menu-open-close-button"
+      (click)="drawer.toggle()">
+  </div>
+  <span><img class="search-icon" src="../../assets/Search.png"></span>
+  <span class="spacer"></span>
+  <a class="add-project-btn" routerLink="/"><span class="add-plus-icon"> + </span> Add project</a>
+  <a class="messages" routerLink="/"><img src="../../assets/Messages.png"></a>
+  <a class="notifications" routerLink="/"><span class="notification-item">3</span><img src="../../assets/Notifications.png"></a>
+  <a class="top-user" routerLink="/"><img src="../../assets/user1.jpg"></a><div class="arrow-down" appDropdown></div>
+  <div class="top-dropdown">
+      <ul >
+          <li><a class="notifications" routerLink="/">User Settings</a></li>
+          <li><a class="notifications" routerLink="/">Logout</a></li>
+        </ul>
+  </div>
+
+</mat-toolbar>

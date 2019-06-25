@@ -1,0 +1,28 @@
+<div class="task-box">
+  <div class="main-title">
+    <h2>Tasks</h2>
+    <span class="spacer"></span>
+    <div class="progress-icon"><span>{{progressCounter}}</span></div>
+    <div class="delay-icon"><span>{{delayCounter}}</span></div>
+  </div>
+  <div class="task-list" fxLayout="column" fxLayout.md="column" fxLayout.sm="column"
+    fxLayout.xs="column">
+    <div *ngFor="let task of tasks | slice:0:4;" class="task-item">
+        <div fxFlex="20%" class="icon-box">
+            <div class="icon"><span>{{task.title | slice:0:1}}</span></div>
+          </div>
+          <div fxFlex="60%" class="main-text">
+              <a href="#"><p class="task-title">{{task.title}}</p></a>
+              <p *ngIf="task.status === 'delay'; else progress" class="delay"><img src="../../../assets/time-pink.png"> {{task.time | daysLeft }} days delay</p>
+              <ng-template #progress><p class="progress"><img src="../../../assets/time-gray.png"> {{task.time | daysLeft }} days left</p></ng-template>
+
+            </div>
+          <div fxFlex="15%" class="options">
+              <p><img src="../../../assets/Options.png"></p>
+            </div>
+
+
+    </div>
+  </div>
+
+</div>

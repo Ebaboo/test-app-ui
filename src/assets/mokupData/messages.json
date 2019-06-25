@@ -1,0 +1,54 @@
+[
+  { "id": 1,
+    "subject": "Hey! I attached some new PSD files for logo you asked for",
+    "message": "cool message",
+    "time": "2019-06-22T05:36:28+00:00",
+    "file": "filename",
+    "settings": [],
+    "status": "unreaded",
+    "user": {
+      "name": "Nina",
+      "lastName": "Jones",
+      "image": "nina.jpg"
+    }
+  },
+  { "id": 2,
+    "subject": "Good morning, you are fired!",
+    "message": "cool message",
+    "time": "2019-06-24T20:36:28+00:00",
+    "file": "",
+    "settings": [],
+    "status": "readed",
+    "user": {
+      "name": "James",
+      "lastName": "Smith",
+      "image": "james.jpg"
+    }
+  },
+  { "id": 3,
+    "subject": "Hey You! It’s me again :-) I attached new files to our project",
+    "message": "cool message",
+    "time": "2019-06-19T05:36:28+00:00",
+    "file": "filename",
+    "settings": [],
+    "status": "unreaded",
+    "user": {
+      "name": "Nina",
+      "lastName": "Jones",
+      "image": "nina.jpg"
+    }
+  },
+  { "id": 4,
+    "subject": "Hello! Could You bring me coffee please?",
+    "message": "cool message",
+    "time": "2019-06-11T05:36:28+00:00",
+    "file": "",
+    "settings": [],
+    "status": "readed",
+    "user": {
+      "name": "Nina",
+      "lastName": "Jones",
+      "image": "nina.jpg"
+    }
+  }
+]

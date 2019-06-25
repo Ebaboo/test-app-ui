@@ -1,0 +1,29 @@
+<div class="messages-box">
+  <div class="main-title">
+    <h2>Messages</h2>
+    <span class="spacer"></span>
+    <div class="unreaded-icon"><span>{{unreadedMessageCounter}}</span></div>
+  </div>
+  <div class="message-list" fxLayout="column" fxLayout.md="column"
+    fxLayout.sm="column"
+    fxLayout.xs="column">
+    <div *ngFor="let message of messages | slice:0:4;">
+      <div [ngClass]="message.status === 'unreaded' ? 'message-with-file-item' :
+        'message-without-file-item'">
+        <div fxFlex="20%" class="user-img">
+          <img src="../../../assets/{{message.user.image}}">
+        </div>
+        <div fxFlex="80%" class="message">
+          <a href="#"><p class="message-title">{{message.user.name + ' ' +
+              message.user.lastName}} <span class="date-ago">{{message.time |
+                dateAgo}}</span></p></a>
+          <a href="#"><p class="message-body">{{ message.subject |
+              slice:0:42}}{{message.subject.length > 42 ? ' (...)' : ''}}</p></a>
+          <div class="message-icons">
+            <img class="reply-icon" src="../../../assets/reply.png">
+            <img class="settings-icon" src="../../../assets/set.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
